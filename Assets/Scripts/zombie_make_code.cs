@@ -18,6 +18,7 @@ public class zombie_make_code : MonoBehaviour
     }
     void InstanciarZombie()
     {
-        Instantiate(Zombie, transform.position, Zombie.transform.rotation);
+        // 수정 좀비.rotation -> 회전 불가능 X
+        Instantiate(Zombie, transform.position, Quaternion.identity);
     }
 }
